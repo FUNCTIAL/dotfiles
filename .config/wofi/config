@@ -1,0 +1,9 @@
+width=300
+height=600
+
+mode=drun
+
+hide_scroll=true
+prompt=
+# normal_window=true
+no_actions=true
