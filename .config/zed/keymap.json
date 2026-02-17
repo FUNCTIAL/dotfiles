@@ -9,14 +9,31 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-alt-v": "workspace::ToggleVimMode"
       // "shift shift": "file_finder::Toggle"
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "ctrl-shift-enter": "editor::NewlineAbove",
+      "ctrl-enter": "editor::NewlineBelow"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-v": "workspace::ToggleVimMode"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-i": "assistant::InlineAssist"
     }
   }
 ]
