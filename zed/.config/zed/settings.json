@@ -1,0 +1,80 @@
+// Zed settings
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your custom settings, run `zed: open default settings`
+
+{
+  // "disable_ai": true,
+  "cli_default_open_behavior": "new_window",
+  "edit_predictions": {
+    "provider": "copilot",
+    "mode": "subtle",
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "sidebar_side": "right",
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "calls": {
+    "mute_on_join": true,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  "base_keymap": "VSCode",
+  "autosave": "on_focus_change",
+  "format_on_save": "off",
+  "vim_mode": false,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+
+  // === INTERFACE ===
+  "ui_font_size": 14,
+  // "ui_font_family": "RobotoMono Nerd Font",
+  "buffer_font_size": 14,
+  "buffer_font_family": "RobotoMono Nerd Font",
+  // "buffer_line_height": "comfortable",
+  "buffer_line_height": { "custom": 1.4 },
+  "tab_size": 4,
+  "hard_tabs": true,
+  "soft_wrap": "editor_width",
+  "theme": {
+    "mode": "dark",
+    "light": "Flexoki Light",
+    "dark": "Ayu Mirage",
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "dark": "Colored Zed Icons Theme Dark",
+    "light": "Colored Zed Icons Theme Light",
+  },
+  "tabs": {
+    "file_icons": true,
+  },
+  "indent_guides": {
+    "coloring": "indent_aware",
+  },
+  "colorize_brackets": true,
+  "auto_signature_help": true,
+}

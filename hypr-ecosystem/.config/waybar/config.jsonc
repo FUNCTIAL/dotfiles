@@ -1,0 +1,35 @@
+{
+	"layer": "top",
+	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+	"modules-center": [],
+	"modules-right": [
+		"hyprland/language",
+		"gamemode",
+		"network",
+		"wireplumber",
+		"clock",
+		"battery",
+	],
+	"sway/window": {
+		"max-length": 50,
+	},
+	"battery": {
+		"format": "{capacity}% {icon}",
+		"format-icons": ["", "", "", "", ""],
+	},
+
+	"clock": {
+		"format-alt": "{:%a, %d. %b  %H:%M}",
+	},
+	"wireplumber": {
+		"format": "{icon} {volume}%",
+		"format-muted": "",
+		"on-click": "kitty --class=wiremix -e wiremix",
+		"format-icons": ["", "", ""],
+	},
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "EN 🇺🇸",
+		"format-th": "TH 🇹🇭",
+	},
+}
