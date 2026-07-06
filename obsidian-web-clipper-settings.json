@@ -1,0 +1,147 @@
+{
+  "vaults": [],
+  "template_17302366899537ohdgl8zt": {
+    "id": "17302366899537ohdgl8zt",
+    "name": "Default",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}_{{author}}_Clippings",
+    "path": "resources/clippings",
+    "noteContentFormat": "{{content}}",
+    "context": "",
+    "properties": [
+      {
+        "id": "1741743784430el6nfjuh1",
+        "name": "author",
+        "value": "{{author}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1741743791162w9wbd6jp7",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1749842369066s07m3n3wd",
+        "name": "read",
+        "value": "",
+        "type": "checkbox"
+      },
+      {
+        "id": "17498424114619dt06kcid",
+        "name": "output",
+        "value": "",
+        "type": "multitext"
+      }
+    ],
+    "triggers": []
+  },
+  "highlighter_settings": {
+    "highlighterEnabled": true,
+    "alwaysShowHighlights": true,
+    "highlightBehavior": "replace-content"
+  },
+  "interpreter_settings": {
+    "interpreterModel": "gpt-4o-mini",
+    "models": [
+      {
+        "baseUrl": "https://api.openai.com/v1/chat/completions",
+        "enabled": true,
+        "id": "gpt-4o-mini",
+        "name": "GPT-4o Mini",
+        "provider": "OpenAI"
+      },
+      {
+        "baseUrl": "https://api.openai.com/v1/chat/completions",
+        "enabled": true,
+        "id": "gpt-4o",
+        "name": "GPT-4o",
+        "provider": "OpenAI"
+      },
+      {
+        "baseUrl": "https://api.openai.com/v1/chat/completions",
+        "enabled": true,
+        "id": "gpt-o1-mini",
+        "name": "GPT-o1 Mini",
+        "provider": "OpenAI"
+      },
+      {
+        "baseUrl": "https://api.anthropic.com/v1/messages",
+        "enabled": true,
+        "id": "claude-3-5-sonnet-20240620",
+        "name": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "baseUrl": "https://api.anthropic.com/v1/messages",
+        "enabled": true,
+        "id": "claude-3-haiku-20240307",
+        "name": "Claude 3 Haiku",
+        "provider": "Anthropic"
+      },
+      {
+        "baseUrl": "https://api.anthropic.com/v1/messages",
+        "enabled": true,
+        "id": "claude-3-opus-20240229",
+        "name": "Claude 3 Opus",
+        "provider": "Anthropic"
+      }
+    ],
+    "providers": [],
+    "interpreterEnabled": false,
+    "interpreterAutoRun": false,
+    "defaultPromptContext": "{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")}}"
+  },
+  "template_list": [
+    "17302366899537ohdgl8zt"
+  ],
+  "general_settings": {
+    "showMoreActionsButton": false,
+    "betaFeatures": false,
+    "legacyMode": false,
+    "silentOpen": false,
+    "openBehavior": "popup",
+    "saveBehavior": "addToObsidian"
+  },
+  "migrationVersion": 1,
+  "reader_settings": {
+    "fontSize": 1.5,
+    "lineHeight": 1.6,
+    "maxWidth": 38,
+    "theme": "default",
+    "themeMode": "auto"
+  },
+  "property_types": [
+    {
+      "name": "source",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "clippings",
+      "name": "tags",
+      "type": "multitext"
+    },
+    {
+      "name": "read",
+      "type": "checkbox"
+    },
+    {
+      "name": "output",
+      "type": "multitext"
+    },
+    {
+      "name": "cover",
+      "type": "text"
+    }
+  ],
+  "stats": {
+    "addToObsidian": 89,
+    "saveFile": 0,
+    "copyToClipboard": 0,
+    "share": 0
+  }
+}
