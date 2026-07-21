@@ -5,6 +5,16 @@
 
 {
   // "disable_ai": true,
+  "proxy": "",
+  "agent_servers": {
+    "github-copilot-cli": {
+      "default_config_options": {
+        "allow_all": "off"
+      },
+      "type": "registry"
+    }
+  },
+  "disable_ai": false,
   "session": {
     "trust_all_worktrees": true
   },
@@ -43,10 +53,8 @@
     "diagnostics": false,
     "metrics": false,
   },
-
-  "base_keymap": "VSCode",
-  "autosave": "on_focus_change",
   "format_on_save": "off",
+  "base_keymap": "VSCode",
   "vim_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true,
@@ -63,12 +71,12 @@
   "hard_tabs": true,
   "soft_wrap": "editor_width",
   "theme": {
-    "mode": "dark",
+    "mode": "light",
     "light": "Flexoki Light",
     "dark": "Ayu Mirage",
   },
   "icon_theme": {
-    "mode": "dark",
+    "mode": "light",
     "dark": "Colored Zed Icons Theme Dark",
     "light": "Colored Zed Icons Theme Light",
   },
